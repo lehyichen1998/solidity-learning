@@ -436,7 +436,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Twitter-Inheritance-Exercise.sol": "Twitter"
+			"contracts/Twitter-Interaction-Exercise-Main.sol": "Twitter"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -466,12 +466,12 @@
 				"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
 			]
 		},
-		"contracts/Twitter-Inheritance-Exercise.sol": {
-			"keccak256": "0x30f1d319ee81a1f50f9cdd3aa7fe98780f9e25b906de8c768ba9335eddbefe10",
+		"contracts/Twitter-Interaction-Exercise-Main.sol": {
+			"keccak256": "0x4ac610c51d853759e86140257337f2bc77d1a799cfc892888e6d16a3718530d1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://96703a7104fcf47d42d541fffc4942c7a89e655805de5a5f34c4671fbaf76438",
-				"dweb:/ipfs/QmSHvP4seXUUp8F35XP4pjv8qXRQSpRN7jEZeEnVcVDw7C"
+				"bzz-raw://a0b3789931d5079ec1e5beaa77aff8ea281929de9770a5a9493e651e9f3ef1a2",
+				"dweb:/ipfs/Qmd8jbGGZShhS9DZsA6NVNcWmeyLJsqrgseKjZeFucmv8X"
 			]
 		}
 	},

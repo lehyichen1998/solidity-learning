@@ -1,0 +1,119 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getProfile",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "displayName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "bio",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Profile.UserProfile",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "profiles",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "displayName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bio",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_displayName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_bio",
+						"type": "string"
+					}
+				],
+				"name": "setProfile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Twitter-Interaction-Exercise-User.sol": "Profile"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Twitter-Interaction-Exercise-User.sol": {
+			"keccak256": "0x9dd28456abfd2409e3ff39e6a50a885ff3d89d0b21330836e804eb00f3b0adb3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9119935aa802078d252a4424470167e05390194280ffe05b0660f5dd8bce33f6",
+				"dweb:/ipfs/QmcMvyfiodgpqboNxhTCtEiD9E5WFrVZAgES8HfDrWHrmi"
+			]
+		}
+	},
+	"version": 1
+}

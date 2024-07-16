@@ -9,47 +9,44 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_userContractAddress",
+						"name": "userAddress",
 						"type": "address"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "gameCount",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
+					},
 					{
 						"internalType": "string",
 						"name": "username",
 						"type": "string"
 					}
 				],
-				"name": "startGame",
+				"name": "createUser",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "userContract",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "contract IUser",
+						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"name": "players",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "playerAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "username",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "score",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -69,7 +66,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Interaction-Exercise-Game.sol": "Game"
+			"contracts/Interaction-Exercise-User.sol": "User"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -83,12 +80,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Interaction-Exercise-Game.sol": {
-			"keccak256": "0x18cd4816005f2635bec3fec79c1bff4c954eb55f57e48b505698114034c0eaf7",
+		"contracts/Interaction-Exercise-User.sol": {
+			"keccak256": "0x3565f2896752b4acd575276fb747c309afd7434bbd17422359a2ed818df3b0e1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://95f8b9677068b332204b76425a0767c459fef8b93b20120d08feaef9c15983c6",
-				"dweb:/ipfs/QmdDrURTLLHy34RuHmgdwjpm7gpSnUxPk157nyFFTRyLGw"
+				"bzz-raw://1b07ee33191b0f472766ad067aaa2acfc55e3c64bc2a69d1c9c1d3ace56e2683",
+				"dweb:/ipfs/QmSiMLPXMSEDC8241oYR1VyLqxHUWHBnkuAnvZrRYrzWF1"
 			]
 		}
 	},

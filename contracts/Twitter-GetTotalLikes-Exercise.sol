@@ -6,7 +6,7 @@
 // 3️⃣ Sum up totalLikes
 // 4️⃣ Return totalLikes
 
-pragma solidity ^0.8.0;
+pragma solidity >=0.7.0 <0.9.0;
 
 contract Twitter {
     uint16 public MAX_TWEET_LENGTH = 280;
