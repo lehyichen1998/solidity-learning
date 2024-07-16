@@ -96,7 +96,7 @@
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "newUnLikeCount",
+						"name": "newLikeCount",
 						"type": "uint256"
 					}
 				],
@@ -183,6 +183,25 @@
 						"internalType": "struct Twitter.Tweet[]",
 						"name": "",
 						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_author",
+						"type": "address"
+					}
+				],
+				"name": "getTotalLikes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -341,7 +360,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Twitter-AddEvent-Exercise.sol": "Twitter"
+			"contracts/Twitter-GetTotalLikes-Exercise.sol": "Twitter"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -355,12 +374,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Twitter-AddEvent-Exercise.sol": {
-			"keccak256": "0x801ff25a8339ca79fb47710a3f2bc59488125d036efd528fae44d2b31b7f3693",
+		"contracts/Twitter-GetTotalLikes-Exercise.sol": {
+			"keccak256": "0x61561851e4d7c4e851d03b1e5f9c3fd54271fa30506d6a056cbade45cf44c0db",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6afe7c27f8edf89caf62557e423c85372edc303fccf49d06cc403fc7203fea4b",
-				"dweb:/ipfs/QmaxCXaVXusRMWiYaMTDiM5bynmcM62XhffdEbY9pP3wit"
+				"bzz-raw://54c89e224714c64e2779c6a40544ce7a41e549be63af104413faa7635688ad62",
+				"dweb:/ipfs/QmbKHFZbgPFr1aFieFkd8h2wRhMUNThiB7n2Dmo5DnqiFS"
 			]
 		}
 	},
