@@ -265,9 +265,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint16",
+						"internalType": "uint256",
 						"name": "num_token",
-						"type": "uint16"
+						"type": "uint256"
 					}
 				],
 				"name": "mintFifty",
@@ -525,7 +525,7 @@
 		"compilationTarget": {
 			"contracts/token.sol": "TheodoresToken"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -538,11 +538,11 @@
 	},
 	"sources": {
 		"contracts/token.sol": {
-			"keccak256": "0x6765ecb14e9e202e71adbd025ae47c2cd8462aed2256a1f80b5f65ba0131ba7b",
+			"keccak256": "0x253e27748e3140574ed18a902449de6cfcd7c2eb8de0df3132eed0feba64034c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dc30aa6e0906f78c7fdb60460ed92736c62dc7f23a08d1a2d5cf7cad5d126787",
-				"dweb:/ipfs/QmerpDZ2UJMnB8HR77vt5wTAYytMUgVcy65PQJE9yoYqnD"
+				"bzz-raw://b25cc200c95836b3da4f3a9867d7081aa335f0ab135d8e84351ec26db2548b02",
+				"dweb:/ipfs/QmTiPotkDEg7YSQfSwaGEJDMHqd16Dn2vSht3AHrCPmvCE"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol": {
