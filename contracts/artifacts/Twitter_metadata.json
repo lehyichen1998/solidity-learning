@@ -8,164 +8,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "initialOwner",
-						"type": "address"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "owner",
-						"type": "address"
-					}
-				],
-				"name": "OwnableInvalidOwner",
-				"type": "error"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					}
-				],
-				"name": "OwnableUnauthorizedAccount",
-				"type": "error"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "previousOwner",
-						"type": "address"
-					},
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "newOwner",
-						"type": "address"
-					}
-				],
-				"name": "OwnershipTransferred",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "author",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "string",
-						"name": "content",
-						"type": "string"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "timestamp",
-						"type": "uint256"
-					}
-				],
-				"name": "TweetCreated",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "liker",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "tweetAuthor",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "tweetId",
-						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "newLikeCount",
-						"type": "uint256"
-					}
-				],
-				"name": "TweetLiked",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "unliker",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "tweetAuthor",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "tweetId",
-						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "newLikeCount",
-						"type": "uint256"
-					}
-				],
-				"name": "TweetUnliked",
-				"type": "event"
-			},
-			{
-				"inputs": [],
-				"name": "MAX_TWEET_LENGTH",
-				"outputs": [
-					{
-						"internalType": "uint16",
-						"name": "",
-						"type": "uint16"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "string",
 						"name": "_tweet",
 						"type": "string"
@@ -188,11 +30,6 @@
 				"outputs": [
 					{
 						"components": [
-							{
-								"internalType": "uint256",
-								"name": "id",
-								"type": "uint256"
-							},
 							{
 								"internalType": "address",
 								"name": "author",
@@ -226,23 +63,9 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_author",
+						"name": "_owner",
 						"type": "address"
-					}
-				],
-				"name": "getTotalLikes",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
+					},
 					{
 						"internalType": "uint256",
 						"name": "_i",
@@ -253,11 +76,6 @@
 				"outputs": [
 					{
 						"components": [
-							{
-								"internalType": "uint256",
-								"name": "id",
-								"type": "uint256"
-							},
 							{
 								"internalType": "address",
 								"name": "author",
@@ -291,57 +109,6 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "author",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
-					}
-				],
-				"name": "likeTweet",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "owner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "renounceOwnership",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "newOwner",
-						"type": "address"
-					}
-				],
-				"name": "transferOwnership",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
 						"name": "",
 						"type": "address"
 					},
@@ -353,11 +120,6 @@
 				],
 				"name": "tweets",
 				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
-					},
 					{
 						"internalType": "address",
 						"name": "author",
@@ -381,51 +143,11 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "author",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
-					}
-				],
-				"name": "unlikeTweet",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
 			}
 		],
 		"devdoc": {
-			"errors": {
-				"OwnableInvalidOwner(address)": [
-					{
-						"details": "The owner is not a valid owner account. (eg. `address(0)`)"
-					}
-				],
-				"OwnableUnauthorizedAccount(address)": [
-					{
-						"details": "The caller account is not authorized to perform an operation."
-					}
-				]
-			},
 			"kind": "dev",
-			"methods": {
-				"owner()": {
-					"details": "Returns the address of the current owner."
-				},
-				"renounceOwnership()": {
-					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner."
-				},
-				"transferOwnership(address)": {
-					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
-				}
-			},
+			"methods": {},
 			"version": 1
 		},
 		"userdoc": {
@@ -436,7 +158,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Twitter-Interaction-Exercise-Main.sol": "Twitter"
+			"contracts/Twitter-Struct.sol": "Twitter"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -450,28 +172,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"@openzeppelin/contracts/access/Ownable.sol": {
-			"keccak256": "0xff6d0bb2e285473e5311d9d3caacb525ae3538a80758c10649a4d61029b017bb",
+		"contracts/Twitter-Struct.sol": {
+			"keccak256": "0xd287797b96a4ee6da655982d6bfc906cbdf098e2696dbd7c0f65136ccf8d4a76",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8ed324d3920bb545059d66ab97d43e43ee85fd3bd52e03e401f020afb0b120f6",
-				"dweb:/ipfs/QmfEckWLmZkDDcoWrkEvMWhms66xwTLff9DDhegYpvHo1a"
-			]
-		},
-		"@openzeppelin/contracts/utils/Context.sol": {
-			"keccak256": "0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12",
-				"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
-			]
-		},
-		"contracts/Twitter-Interaction-Exercise-Main.sol": {
-			"keccak256": "0x4ac610c51d853759e86140257337f2bc77d1a799cfc892888e6d16a3718530d1",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://a0b3789931d5079ec1e5beaa77aff8ea281929de9770a5a9493e651e9f3ef1a2",
-				"dweb:/ipfs/Qmd8jbGGZShhS9DZsA6NVNcWmeyLJsqrgseKjZeFucmv8X"
+				"bzz-raw://11d99a4ad3deac445b7a3d29888d77a3dacc12cfe71a259f4fa8261b95f5bfa8",
+				"dweb:/ipfs/QmcoN2vcaaPHcSaJ5ttwxYUY5gVYa7BfJiaGgWjy1NK5B2"
 			]
 		}
 	},

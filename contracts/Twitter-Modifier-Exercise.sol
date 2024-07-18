@@ -9,7 +9,7 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract Twitter {
-    uint16 public MAX_TWEET_LENGTH = 280;
+    uint16 public MAX_TWEET_LENGTH = 0;
 
     struct Tweet {
         address author;
@@ -22,6 +22,7 @@ contract Twitter {
 
     constructor(){
         owner = msg.sender;
+        MAX_TWEET_LENGTH = 100;
     }
 
     modifier onlyOwner(){
