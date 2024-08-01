@@ -559,7 +559,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/token/token.sol": "MyToken"
+			"contracts/token/tokenERC20.sol": "MyToken"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -573,12 +573,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/token/token.sol": {
-			"keccak256": "0x4e7732ead202d7251ec9ce8f28b39379ca0035af04640857f08af2ce00e39b55",
+		"contracts/token/tokenERC20.sol": {
+			"keccak256": "0x599ec83d118e3b1b72b2ddb3cd48c0747b3a7ebbe1a60321839cf2f86be9a01b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ac28d253612fbe79c15c0a4a565540891fd01a2901ae43262d04a029373d7c1c",
-				"dweb:/ipfs/QmcmgxwS1K7kpAvH4yb7m9h6TZuzKqxeUTme9VQw22c7Kp"
+				"bzz-raw://fd225f1ea36e144c64f09a6dba8128f82a87218d363688d515f38ee84336e724",
+				"dweb:/ipfs/QmSeQzeWaAy86aGhkB7yirsfYcNPdqb6RvR8xajpQgKEM3"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol": {
