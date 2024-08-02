@@ -66,18 +66,6 @@ contract NFT is ERC721, Ownable {
         return mintedIds;
     }
 
-    function _update(
-        address to,
-        uint256 tokenId,
-        address auth
-    ) internal override returns (address) {
-        address from = _ownerOf(tokenId);
-        if (from != address(0) && to != address(0)) {
-            revert("Soulbound: Transfer failed");
-        }
-        return super._update(to, tokenId, auth);
-    }
-
     struct TokenInfo {
         uint256 tokenId;
         string tokenURI;

@@ -821,7 +821,7 @@
 		"compilationTarget": {
 			"contracts/masverse/NFT.sol": "NFT"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -930,11 +930,11 @@
 			]
 		},
 		"contracts/masverse/NFT.sol": {
-			"keccak256": "0xfaf5e915834709f2663ab933f74dd84d0632d8989434df8d0d9b17e6e9b8e73e",
+			"keccak256": "0x335e390a6e2136d3a8224af5234d18ee800bf0ebe1e9a3dd91f2b66ebca8d911",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d902bda3946317facb754af558edb9807d0d632f8e10edf5e0ea75d59a7c3480",
-				"dweb:/ipfs/QmTjwvRcT1aqoEdPnKKzWCP7U3CjaeYgKqQZQMiKCPgPbT"
+				"bzz-raw://e7af80954bdf61fc3d4db36685c9fbac1d097c87f5d0d91c4e0ae19ce0b10a8c",
+				"dweb:/ipfs/QmWZqZC5aHsS7ARtGxLkdZyDArrHKAjb9YokN8G1NgtC1r"
 			]
 		}
 	},
