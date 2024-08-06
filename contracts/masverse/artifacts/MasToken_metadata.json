@@ -776,14 +776,6 @@
 				"dweb:/ipfs/Qmau6x4Ns9XdyynRCNNp3RhLqijJjFm7z5fyZazfYFGYdq"
 			]
 		},
-		"@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol": {
-			"keccak256": "0x9a961321311c070327b31fba89d821346225a411f946c9e84b330afdfdbb1d60",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://084698c9feace630ff29919baad9df0721944eb2ecaf942ef807935bbbe41b5a",
-				"dweb:/ipfs/Qmet4EQYqPLSKo7UPBNGaVw5NPATNkiLsqSCnCgg5kAPg4"
-			]
-		},
 		"@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol": {
 			"keccak256": "0xb18c53aecf95e53339972e3d496a56c42e6b60a03a49ce8e6a37d3bd9d5d0a67",
 			"license": "MIT",
@@ -816,12 +808,20 @@
 				"dweb:/ipfs/QmXdcYj5v7zQxXFPULShHkR5p4Wa2zYuupbHnFdV3cHYtc"
 			]
 		},
-		"contracts/masverse/MasToken.sol": {
-			"keccak256": "0xec3a9439e0bdd04b1dcd51e2876352772614070c67eeb4c1ebcad56d62153d1c",
+		"contracts/NewSC/ERC20Capped.sol": {
+			"keccak256": "0xb099574e7f897c5e4168e9c1edac142593c0b6fd1fec58b8e25603366a8e9769",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6dd3122d5740d7333554d8e823939fc0d29094a04874fc32988bf562e43f7b05",
-				"dweb:/ipfs/QmeLwmYY9pp9TjQr1KjVZGUMvVx5DsE5wQbonmnxcd9uJY"
+				"bzz-raw://4e2fa56b73fd5c96be375ff6f6cfb82ece7413c75d03079d5418859c626027bf",
+				"dweb:/ipfs/QmVCbzbhi7eZks46vDaTiGq6x7TvrfbS2j5Nq5eZSRP841"
+			]
+		},
+		"contracts/masverse/MasToken.sol": {
+			"keccak256": "0x7da641e232ef275e618057ef1cac26ac1129c27e709a2981de0768a433ad33ca",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://219750a2b511221c0ce76bf06a078db6069c5fd3ddc6a5f7c907c65de52c2bbe",
+				"dweb:/ipfs/QmejFj9BEdGhqjxFfZPNTeKoJRF8J3a4vRmZYXcSDbivRk"
 			]
 		}
 	},
